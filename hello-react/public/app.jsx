@@ -1,3 +1,6 @@
+var React = require('react'),
+    ReactDOM = require('react-dom');
+
 var GreeterMessage = React.createClass({
   render: function() {
     var name = this.props.name,
@@ -67,7 +70,6 @@ var Greeter = React.createClass({
         <div>
           <GreeterMessage name={name} message={message}/>
           <GreeterForm onUpdates={this.handleUpdates} />
-          {/* <GreeterForm onNewName={this.handleNewName} onNewMessage={this.handleNewMessage}/> */}
         </div>
     );
   }
