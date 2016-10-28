@@ -8,6 +8,7 @@ var React = require('react'),
 
     Nav = require('Nav'),
     Weather = require('Weather'),
+    Examples = require('Examples'),
 
     Main = React.createClass({
       render: function() {
@@ -15,6 +16,7 @@ var React = require('react'),
           <div>
             <Nav />
             <h2>Main Component</h2>
+            {this.props.children}
           </div>
         );
       }
