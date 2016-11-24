@@ -14,18 +14,19 @@ var React = require('react'),
 
       handleSearch: function(location) {
         let that = this;
+        
         this.setState({ isLoading: true });
 
         openWeatherMap.getTemp(location).then(function(temp) {
           that.setState({
-            isLoading: false,
             location: location,
-            temp: temp
+            temp: temp,
+            isLoading: false
           });
-        }, function(errorMessage){
+        }, function(errorMessage) {
           that.setState({ isLoading: false });
           alert(errorMessage);
-        })
+        });
       },
 
       render: function() {
@@ -33,12 +34,12 @@ var React = require('react'),
 
         function renderMessage() {
           if(isLoading) {
-            return <h3>Getting Weather...</h3>
+            return <h3>Getting Weather...</h3>;
 
           } else if (temp && location) {
-            return <WeatherMessage temp={temp} location={location} />
+            return <WeatherMessage temp={temp} location={location} />;
           }
-        };
+        }
 
         return(
           <div>
