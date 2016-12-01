@@ -1,0 +1,20 @@
+// ---------------- VARS ----------------
+$top-bar-text: #fff;
+$top-bar-color: #333;
+
+
+// ---------------- Main Styles ----------------
+
+
+// ---------------- Foundation Overrides ----------------
+
+
+// ---------------- Nav.jsx ----------------
+.top-bar {
+  background: $top-bar-color;
+
+  ul {
+    background: none;
+    color: $top-bar-text;
+  }
+}
