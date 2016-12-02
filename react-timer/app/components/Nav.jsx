@@ -9,6 +9,8 @@ var Nav = React.createClass({
             <div className="top-bar-left">
               <ul className="menu">
                 <li className="menu-text">
+                  {/* <img src="./images/components/nav/blue-clock-icon.png"></img> */}
+                  <img src="./images/components/nav/stopwatch.png" className="logo"></img>
                   React Timer
                 </li>
                 <li>
@@ -26,7 +28,7 @@ var Nav = React.createClass({
             <div className="top-bar-right">
               <ul className="menu">
                 <li className="menu-text">
-                  Created by <a href="https://github.com/MiguelDotL" target="_blank">Miguel Lozano</a>
+                  Created by &nbsp; <a href="https://github.com/MiguelDotL" target="_blank">Miguel Lozano</a>
                 </li>
               </ul>
             </div>
